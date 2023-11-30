@@ -1,7 +1,5 @@
 "use strict";
 
-// 71) Webpack. Собираем наш проект + ПРАКТИКА
-
 require('es6-promise').polyfill();
 import 'nodelist-foreach-polyfill';
 
@@ -34,20 +32,5 @@ window.addEventListener('DOMContentLoaded', () => {
 		wrapper: '.offer__slider-wrapper',
 		field: '.offer__slider-inner'
 	});
-
-
-	// axios.get('http://localhost:3000/menu')
-	// 	.then(data => {
-	// 		data.data.forEach(({img, altimg, title, descr, price}) => {
-	// 			new MenuCard(img, altimg, title, descr, price, '.menu .container').render();
-	// 		});
-	// 	});
-
-	// getResource('http://localhost:3000/menu')
-	// 	.then(data => {
-	// 		data.forEach(({img, altimg, title, descr, price}) => {				//- 1 вариант (с шаблонами) 
-	// 			new MenuCard(img, altimg, title, descr, price, '.menu .container').render();
-	// 		});
-	// 	});
 
 });
