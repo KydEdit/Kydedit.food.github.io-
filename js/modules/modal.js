@@ -22,13 +22,10 @@ function modal(triggerSelector, modalSelector, modalTimerId) {
 
 	const modalTrigger = document.querySelectorAll(triggerSelector),
     modal = document.querySelector(modalSelector);
-    // modalCloseBtn = document.querySelector('[data-close]') - удалить
 
     modalTrigger.forEach(btn => {
         btn.addEventListener('click', () => openModal(modalSelector, modalTimerId));
     });
-
-    // modalCloseBtn.addEventListener('click', closeModal); - удалить
 
     modal.addEventListener('click', (e) => {
         if (e.target === modal || e.target.getAttribute('data-close') == '') {
@@ -41,8 +38,6 @@ function modal(triggerSelector, modalSelector, modalTimerId) {
             closeModal(modalSelector);
         }
     });
-
-    // const modalTimerId = setTimeout(openModal, 50000);
 
     function showModalByScroll() {
         if (window.scrollY + document.documentElement.clientHeight >= document.documentElement.scrollHeight) {
