@@ -74,21 +74,6 @@ function calc() {
 			});
 		});
 
-		// document.querySelector(parentSelector).addEventListener('click', (e) => { - баг удалить
-		// 	if (e.target.getAttribute('data-ratio')) { - баг удалить
-		// 		ratio = +e.target.getAttribute('data-ratio'); - баг удалить
-		// 	} else { - баг удалить
-		// 		sex = e.target.getAttribute('id'); - баг удалить
-		// 	} - баг удалить
-
-		// 	elements.forEach(elem => { - баг удалить
-		// 		elem.classList.remove(activeClass); - баг удалить
-		// 	}); - баг удалить
-
-		// 	e.target.classList.add(activeClass); - баг удалить
-
-		// 	calcTotal(); - баг удалить
-		// }); - баг удалить
 	}
 
 	getStaticInformation('#gender div', 'calculating__choose-item_active');
